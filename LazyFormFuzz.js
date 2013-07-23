@@ -691,7 +691,7 @@ javascript: (function (w) {
         url: /^(https?:\/\/)([a-z\.\-]+)\.([a-z\.]{2,6})\/?$/,
         sql: /[a-z0-9"'`\-]{5,17}/,
         text: /[\x20-\x7E]{10,15}/,
-        textarea: /[\x20-\x7E]{10,30}/
+        textarea: /[\x20-\x7E]{10,30}/,
         color: /^\#[0-9a-f]{6}$/i,
         tel: /[0-9+\-]{7,15}/,
         alphanumeric: /[A-Z][0-9]+/i,
