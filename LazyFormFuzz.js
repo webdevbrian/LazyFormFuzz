@@ -1,4 +1,3 @@
-
 javascript: (function (w) {
     var b = function (e, h) {
         var c = b.resolve(e, h || "/"),
@@ -692,6 +691,7 @@ javascript: (function (w) {
         url: /^(https?:\/\/)([a-z\.\-]+)\.([a-z\.]{2,6})\/?$/,
         sql: /[a-z0-9"'`\-]{5,17}/,
         text: /[\x20-\x7E]{10,15}/,
+        textarea: /[\x20-\x7E]{10,30}/
         color: /^\#[0-9a-f]{6}$/i,
         tel: /[0-9+\-]{7,15}/,
         alphanumeric: /[A-Z][0-9]+/i,
@@ -744,7 +744,7 @@ javascript: (function (w) {
                         if (!1 === a.hasAttribute("type") && "INPUT" !== a.nodeName) switch (a.nodeName) {
                         case "TEXTAREA":
                             c =
-                                (new m(l.text)).gen();
+                                (new m(l.textarea)).gen();
                             a.value = c;
                             continue;
                         case "SELECT":
