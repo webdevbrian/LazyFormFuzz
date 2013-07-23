@@ -2,6 +2,8 @@
 A bookmarklet for filling HTML forms with random data. 
 Data is generated from regular expressions, using [RandExp](https://github.com/fent/randexp.js).
 
+## Edited by Brian Kinney - Adding more specific form text and tweaks
+
 ## Browser Support
 IE 8+, Firefox, Chrome, Opera (Presto and Blink), and Safari
 
